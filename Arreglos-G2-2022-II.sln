@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arreglos-G2-2022-II", "Arreglos-G2-2022-II.csproj", "{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsArreglos-G2-2022-II", "..\FormsArreglos-G2-2022-II\FormsArreglos-G2-2022-II.csproj", "{9638EB17-AB0B-4C67-A12D-D1EA879D9092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9638EB17-AB0B-4C67-A12D-D1EA879D9092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9638EB17-AB0B-4C67-A12D-D1EA879D9092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9638EB17-AB0B-4C67-A12D-D1EA879D9092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9638EB17-AB0B-4C67-A12D-D1EA879D9092}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE2828C-BF49-4417-AC74-86ECB76BE1BC}
+	EndGlobalSection
+EndGlobal
