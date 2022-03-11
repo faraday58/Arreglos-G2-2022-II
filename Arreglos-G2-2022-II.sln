@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arreglos-G2-2022-II", "Arreglos-G2-2022-II.csproj", "{3ED9B6A6-0EA5-4C6E-8E25-0B6649ACAAA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsArreglos-G2-2022-II", "..\FormsArreglos-G2-2022-II\FormsArreglos-G2-2022-II.csproj", "{9638EB17-AB0B-4C67-A12D-D1EA879D9092}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsArreglos-G2-2022-II", "FormsArreglos-G2-2022-II\FormsArreglos-G2-2022-II.csproj", "{9638EB17-AB0B-4C67-A12D-D1EA879D9092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
