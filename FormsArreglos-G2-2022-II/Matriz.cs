@@ -5,13 +5,14 @@ namespace FormsArreglos_G2_2022_II
     class Matriz
     {
         private int n;
-        private int[] A;
-
+//        private int[] A;
+/*
         public Matriz(int n)
         {
             N= n ;
             A = new int[N];            
         }
+*/
         #region Propiedades
         public int N { 
             get => n;
@@ -37,7 +38,7 @@ namespace FormsArreglos_G2_2022_II
 
         }
      */
-
+/*
         public static Matriz operator +(Matriz m1,Matriz m2  )
         {
             Matriz aux =  new Matriz(m1.N);
@@ -49,6 +50,6 @@ namespace FormsArreglos_G2_2022_II
             return aux;
 
         }
-
+*/
     }
 }
