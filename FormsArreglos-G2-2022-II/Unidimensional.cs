@@ -24,6 +24,17 @@ namespace FormsArreglos_G2_2022_II
 
             return aux;
         }
+        public static Unidimensional operator +(Unidimensional u1,Unidimensional u2  )
+        {
+            Unidimensional aux = new Unidimensional(u1.N);
+            for( int i =0; i < aux.N; i++)
+            {
+                aux.A[i] = u1.A[i] + u2.A[i];
+            }
+            return aux;
+
+        }
+
 
         public override string ToString()
         {

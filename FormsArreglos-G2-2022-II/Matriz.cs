@@ -17,7 +17,7 @@ namespace FormsArreglos_G2_2022_II
         public int N { 
             get => n;
             set {
-                if( n < 2)
+                if( value < 2)
                 {
                     n = 2;
                 }
