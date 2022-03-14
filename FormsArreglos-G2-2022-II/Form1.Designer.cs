@@ -43,12 +43,13 @@ namespace FormsArreglos_G2_2022_II
             // 
             // btnSumar
             // 
-            this.btnSumar.Location = new System.Drawing.Point(302, 313);
+            this.btnSumar.Location = new System.Drawing.Point(302, 371);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(93, 57);
             this.btnSumar.TabIndex = 1;
             this.btnSumar.Text = "+";
             this.btnSumar.UseVisualStyleBackColor = true;
+            this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
             // txtbDisplay
             // 
@@ -60,7 +61,7 @@ namespace FormsArreglos_G2_2022_II
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(735, 210);
+            this.label2.Location = new System.Drawing.Point(736, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 29);
             this.label2.TabIndex = 0;
@@ -68,10 +69,9 @@ namespace FormsArreglos_G2_2022_II
             // 
             // lbResultado
             // 
-            this.lbResultado.AutoSize = true;
-            this.lbResultado.Location = new System.Drawing.Point(798, 183);
+            this.lbResultado.Location = new System.Drawing.Point(794, 210);
             this.lbResultado.Name = "lbResultado";
-            this.lbResultado.Size = new System.Drawing.Size(45, 58);
+            this.lbResultado.Size = new System.Drawing.Size(184, 87);
             this.lbResultado.TabIndex = 0;
             this.lbResultado.Text = "0 0\r\n0 0";
             // 
@@ -79,7 +79,7 @@ namespace FormsArreglos_G2_2022_II
             // 
             this.lbMatriz1.Location = new System.Drawing.Point(100, 225);
             this.lbMatriz1.Name = "lbMatriz1";
-            this.lbMatriz1.Size = new System.Drawing.Size(200, 29);
+            this.lbMatriz1.Size = new System.Drawing.Size(200, 109);
             this.lbMatriz1.TabIndex = 0;
             this.lbMatriz1.Text = "0 0";
             // 
@@ -87,7 +87,7 @@ namespace FormsArreglos_G2_2022_II
             // 
             this.lbMatriz2.Location = new System.Drawing.Point(460, 225);
             this.lbMatriz2.Name = "lbMatriz2";
-            this.lbMatriz2.Size = new System.Drawing.Size(200, 29);
+            this.lbMatriz2.Size = new System.Drawing.Size(200, 109);
             this.lbMatriz2.TabIndex = 0;
             this.lbMatriz2.Text = "0 0";
             // 
@@ -111,7 +111,7 @@ namespace FormsArreglos_G2_2022_II
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(92, 313);
+            this.btnAgregar.Location = new System.Drawing.Point(83, 371);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(140, 57);
             this.btnAgregar.TabIndex = 1;
@@ -122,7 +122,7 @@ namespace FormsArreglos_G2_2022_II
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(770, 142);
+            this.label.Location = new System.Drawing.Point(768, 179);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(122, 29);
             this.label.TabIndex = 0;
@@ -132,7 +132,7 @@ namespace FormsArreglos_G2_2022_II
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 429);
+            this.ClientSize = new System.Drawing.Size(1150, 503);
             this.Controls.Add(this.txtbDisplay);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnSumar);
