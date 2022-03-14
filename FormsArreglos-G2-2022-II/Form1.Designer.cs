@@ -39,6 +39,11 @@ namespace FormsArreglos_G2_2022_II
             this.label5 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumar
@@ -128,13 +133,71 @@ namespace FormsArreglos_G2_2022_II
             this.label.TabIndex = 0;
             this.label.Text = "Resultado";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(105, 62);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(146, 33);
+            this.radioButton1.TabIndex = 3;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Radianes";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(302, 62);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(89, 33);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Deg";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(475, 371);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 57);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSumar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(630, 371);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 57);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "*";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnSumar_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(83, 289);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(93, 57);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Sen";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnSumar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1150, 503);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.txtbDisplay);
             this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.lbResultado);
             this.Controls.Add(this.label5);
@@ -161,6 +224,11 @@ namespace FormsArreglos_G2_2022_II
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

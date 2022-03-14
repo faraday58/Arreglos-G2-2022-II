@@ -20,58 +20,98 @@ namespace FormsArreglos_G2_2022_II
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
-            if (txtbDisplay.Text.Contains(";"))
+            try
             {
-                m1 = Multidimensional.Leer(txtbDisplay.Text);
-                if (lbOperandos)
+                if(txtbDisplay.Text == "")
                 {
-                    m2 = m1;
-                    lbMatriz1.Text = m1.ToString();
-                    lbOperandos = false;
+                    string error = "Debe de ingresar una matriz";
+                    throw new ApplicationException(error);
+                }
+
+                #region Leer operandos
+                if (txtbDisplay.Text.Contains(";"))
+                {
+                    m1 = Multidimensional.Leer(txtbDisplay.Text);
+                    if (lbOperandos)
+                    {
+                        m2 = m1;
+                        lbMatriz1.Text = m1.ToString();
+                        lbOperandos = false;
+                    }
+                    else
+                    {
+                        lbMatriz2.Text = m1.ToString();
+                        lbOperandos = true;
+                    }
+
                 }
                 else
                 {
-                    lbMatriz2.Text = m1.ToString();
-                    lbOperandos = true;
-                }
 
+                    u1 = Unidimensional.Leer(txtbDisplay.Text);
+                    if (lbOperandos)
+                    {
+                        u2 = u1;
+                        lbMatriz1.Text = u1.ToString();
+                        lbOperandos = false;
+                    }
+                    else
+                    {
+
+                        lbMatriz2.Text = u1.ToString();
+                        lbOperandos = true;
+                    }
+                }
+                #endregion
             }
-            else
+            catch(ApplicationException error   )
             {
-
-                u1 = Unidimensional.Leer(txtbDisplay.Text);
-                if (lbOperandos)
-                {
-                    u2 = u1;
-                    lbMatriz1.Text = u1.ToString();
-                    lbOperandos = false;
-                }
-                else
-                {
-
-                    lbMatriz2.Text = u1.ToString();
-                    lbOperandos = true;
-                }
+                MessageBox.Show(error.Message);
             }
+
+
+
+
         }
 
         private void btnSumar_Click(object sender, EventArgs e)
         {
-
-            if ( m1 !=null)
+            try
             {
-                Multidimensional m3 = m2 + m1;
-                lbResultado.Text = m3.ToString();
+                #region Suma
 
+                if (m1 != null)
+                {
+                    if(m2.M != m1.M || m1.N != m2.N  )
+                    {
+                        string error = "Las matrices deben ser conformables";
+                        throw new ApplicationException(error);
+                    }
+
+
+                    Multidimensional m3 = m2 + m1;
+                    lbResultado.Text = m3.ToString();
+
+                }
+                else
+                {
+                    if (u1.N != u2.N)
+                    {
+                        string error = "Las matrices deben ser conformables";
+                        throw new ApplicationException(error);
+                    }
+
+
+                    Unidimensional u3 = u2 + u1;
+                    lbResultado.Text = u3.ToString();                    
+
+                }
+                #endregion
             }
-            else
+            catch(ApplicationException error)
             {
-                Unidimensional u3 = u2 + u1;
-                lbResultado.Text = u3.ToString();
-
+                MessageBox.Show(error.Message);
             }
-            
         }
     }
 }
