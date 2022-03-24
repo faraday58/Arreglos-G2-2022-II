@@ -75,18 +75,41 @@ namespace FormsArreglos_G2_2022_II
             }
             return c;
         }
+        public static Multidimensional operator %(Multidimensional m,bool radianes)
+        {
+            for (int i=0; i< m.M; i++)
+            {
+               for(int j=0; j< m.N; j++)
+                {
+                    if( radianes )
+                    {
+                        m.A[i, j] = (float)Math.Sin(m.A[i, j]);
+                    }
+                    else
+                    {
+                        m.A[i, j] = (float)Math.Sin(Math.PI*m.A[i, j]/180);
+                    }
+                   
+                }
+            }
+
+            return m;
+        }
 
         public override string ToString()
         {
             // 1 2 3
             // 4 5 6
             string A="";
+            string Auxf = "";
 
             for( int i=0; i< M; i ++  )
             {
                 for ( int j =0; j< N; j++)
                 {
-                    A = A + " " + this.A[i, j].ToString(); // 1 2 3 
+                    Auxf = String.Format("{0:f3}", this.A[i, j]);
+                    //A = A + " " + this.A[i, j].ToString(); // 1 2 3 
+                    A = A + " " + Auxf;
                 }
                 A = A + "\n";
 

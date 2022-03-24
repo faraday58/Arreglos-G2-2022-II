@@ -39,11 +39,11 @@ namespace FormsArreglos_G2_2022_II
             this.label5 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbRadianes = new System.Windows.Forms.RadioButton();
+            this.rdbDeg = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSeno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumar
@@ -133,27 +133,27 @@ namespace FormsArreglos_G2_2022_II
             this.label.TabIndex = 0;
             this.label.Text = "Resultado";
             // 
-            // radioButton1
+            // rdbRadianes
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(105, 62);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(146, 33);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Radianes";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbRadianes.AutoSize = true;
+            this.rdbRadianes.Location = new System.Drawing.Point(105, 62);
+            this.rdbRadianes.Name = "rdbRadianes";
+            this.rdbRadianes.Size = new System.Drawing.Size(146, 33);
+            this.rdbRadianes.TabIndex = 3;
+            this.rdbRadianes.TabStop = true;
+            this.rdbRadianes.Text = "Radianes";
+            this.rdbRadianes.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbDeg
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(302, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 33);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Deg";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbDeg.AutoSize = true;
+            this.rdbDeg.Location = new System.Drawing.Point(302, 62);
+            this.rdbDeg.Name = "rdbDeg";
+            this.rdbDeg.Size = new System.Drawing.Size(89, 33);
+            this.rdbDeg.TabIndex = 3;
+            this.rdbDeg.TabStop = true;
+            this.rdbDeg.Text = "Deg";
+            this.rdbDeg.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -175,15 +175,15 @@ namespace FormsArreglos_G2_2022_II
             this.btnMultiplicar.UseVisualStyleBackColor = true;
             this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
-            // button3
+            // btnSeno
             // 
-            this.button3.Location = new System.Drawing.Point(83, 391);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 57);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Sen";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnSumar_Click);
+            this.btnSeno.Location = new System.Drawing.Point(83, 391);
+            this.btnSeno.Name = "btnSeno";
+            this.btnSeno.Size = new System.Drawing.Size(93, 57);
+            this.btnSeno.TabIndex = 1;
+            this.btnSeno.Text = "Sen";
+            this.btnSeno.UseVisualStyleBackColor = true;
+            this.btnSeno.Click += new System.EventHandler(this.btnSeno_Click);
             // 
             // Form1
             // 
@@ -191,12 +191,12 @@ namespace FormsArreglos_G2_2022_II
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1150, 709);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbDeg);
+            this.Controls.Add(this.rdbRadianes);
             this.Controls.Add(this.txtbDisplay);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnMultiplicar);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSeno);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.lbResultado);
@@ -224,11 +224,11 @@ namespace FormsArreglos_G2_2022_II
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbRadianes;
+        private System.Windows.Forms.RadioButton rdbDeg;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnMultiplicar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSeno;
     }
 }
 
