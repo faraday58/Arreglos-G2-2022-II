@@ -29,8 +29,8 @@ namespace FormsArreglos_G2_2022_II
 
             for ( int i=0;  i < matriz.M; i++  )
             {
+                    columnas = renglones[i].Split(',');
 
-                columnas = renglones[i].Split(',');
                 for ( int j=0; j < matriz.N;  j++   )
                 {
                     matriz.A[i, j] = float.Parse(columnas[j]);
@@ -57,6 +57,24 @@ namespace FormsArreglos_G2_2022_II
             return m3;
         }
 
+        public static Multidimensional operator *(Multidimensional a, Multidimensional b)
+        {
+            Multidimensional c = new Multidimensional(a.M, b.N);
+            
+            for( int i=0; i < c.M; i++)
+            {
+                for(int j=0; j< c.N; j++)
+                {
+                     float sum = 0;
+                    for(int k=0; k< a.N; k++)
+                    {
+                        sum += a.A[i, k] * b.A[k, j];
+                    }
+                    c.A[i, j] = sum;
+                }
+            }
+            return c;
+        }
 
         public override string ToString()
         {

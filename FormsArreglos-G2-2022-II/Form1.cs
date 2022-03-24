@@ -113,5 +113,12 @@ namespace FormsArreglos_G2_2022_II
                 MessageBox.Show(error.Message);
             }
         }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            Multidimensional m3 = m2 * m1;
+            lbResultado.Text = m3.ToString();
+
+        }
     }
 }
