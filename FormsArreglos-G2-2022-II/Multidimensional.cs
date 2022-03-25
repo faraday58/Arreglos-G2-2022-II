@@ -89,6 +89,7 @@ namespace FormsArreglos_G2_2022_II
                     }
                     else
                     {
+                        //Transformando a Radianes
                         m1.A[i, j] = (float)Math.Sin(Math.PI*m1.A[i, j]/180);
                     }
                     
