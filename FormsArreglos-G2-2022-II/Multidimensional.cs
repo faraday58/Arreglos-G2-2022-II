@@ -58,17 +58,60 @@ namespace FormsArreglos_G2_2022_II
         }
 
 
+        public static Multidimensional operator *(Multidimensional a, Multidimensional b )
+        {
+            Multidimensional c = new Multidimensional(a.M, b.N);
+            for(int i=0;i < a.M; i++ )
+            {
+                for( int j=0; j < b.N  ; j++ )
+                {
+                    float sum = 0;//a.N = b.M
+                    for(int k=0; k < a.N; k++  )
+                    {
+                        sum = sum + a.A[i, k] * b.A[k,j ];
+                    }
+                    c.A[i, j] = sum;
+                }
+            }
+            return c;
+
+        }
+
+        public static Multidimensional operator %( Multidimensional m1, bool radianes  )
+        {
+            for(int i=0; i < m1.M; i++)
+            {
+                for( int j=0; j< m1.N; j++)
+                {
+                    if(  radianes == true )
+                    {
+                        m1.A[i, j] = (float)Math.Sin(m1.A[i, j]);
+                    }
+                    else
+                    {
+                        m1.A[i, j] = (float)Math.Sin(Math.PI*m1.A[i, j]/180);
+                    }
+                    
+                }
+            }
+            return m1;
+
+        }
+
+
         public override string ToString()
         {
             // 1 2 3
             // 4 5 6
             string A="";
-
+            string Auxf = "";
             for( int i=0; i< M; i ++  )
             {
                 for ( int j =0; j< N; j++)
                 {
-                    A = A + " " + this.A[i, j].ToString(); // 1 2 3 
+                    Auxf = String.Format("{0:f3}",this.A[i,j]);
+                    //  A = A + " " + this.A[i, j].ToString(); // 1 2 3 
+                    A = A + " " + Auxf;
                 }
                 A = A + "\n";
 

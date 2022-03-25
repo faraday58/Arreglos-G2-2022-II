@@ -10,6 +10,7 @@ namespace FormsArreglos_G2_2022_II
         Unidimensional u2;
         Multidimensional m1;
         Multidimensional m2;
+        Multidimensional m3;
        
         bool lbOperandos= true;
 
@@ -89,7 +90,7 @@ namespace FormsArreglos_G2_2022_II
                     }
 
 
-                    Multidimensional m3 = m2 + m1;
+                    m3 = m2 + m1;
                     lbResultado.Text = m3.ToString();
 
                 }
@@ -112,6 +113,18 @@ namespace FormsArreglos_G2_2022_II
             {
                 MessageBox.Show(error.Message);
             }
+        }
+
+        private void btnProducto_Click(object sender, EventArgs e)
+        {
+            m3 = m2 * m1;
+            lbResultado.Text = m3.ToString();
+        }
+
+        private void btnSeno_Click(object sender, EventArgs e)
+        {
+            m3 = m3 % rdbRadianes.Checked;
+            lbResultado.Text = m3.ToString();
         }
     }
 }
